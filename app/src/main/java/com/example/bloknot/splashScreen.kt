@@ -49,6 +49,11 @@ class splashScreen : AppCompatActivity() {
 
         }, 3000)
 
+        buttonFullZametki.setOnClickListener {
+            val intent = Intent(this@splashScreen, Menu::class.java)
+            startActivity(intent)
+        }
+
 
 
 
