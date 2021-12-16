@@ -22,10 +22,5 @@ class Menu : AppCompatActivity() {
         val adapter = Adapter(zametki)
         listView.adapter = adapter
 
-
-
-
-
-
     }
 }

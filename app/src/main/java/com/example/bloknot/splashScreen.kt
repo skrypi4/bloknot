@@ -1,5 +1,6 @@
 package com.example.bloknot
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,6 +10,9 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.bloknot.Utils.ToastUtils
+import com.example.bloknot.fragments.NewRecordFragment
+import kotlinx.android.synthetic.main.activity_splash_screen.*
 
 class splashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,7 +59,11 @@ class splashScreen : AppCompatActivity() {
         }
 
 
-
+        //Не доделано :D
+        buttonNewZametka.setOnClickListener {
+            //ToastUtils.toast("Скрыпа ЛОХ") Влад лох
+            startActivity(Intent(this@splashScreen, BaseActivity::class.java))
+        }
 
 
 

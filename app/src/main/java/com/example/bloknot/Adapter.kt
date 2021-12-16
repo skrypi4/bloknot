@@ -6,7 +6,8 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 
-class Adapter(string: ArrayList<String>):BaseAdapter() {
+// Укажи strings как поле val strings or private val strings
+class Adapter(private val string: ArrayList<String>):BaseAdapter() {
     var strings: ArrayList<String> = ArrayList<String>()
 
     init {

@@ -23,6 +23,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
         android:text="Bloknot"
         android:textColor="#B84949"
         android:textSize="24sp"
@@ -36,25 +37,28 @@
         android:id="@+id/imageButtonProfile"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:backgroundTint="#2C3E50"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
         app:layout_constraintEnd_toEndOf="@+id/toolbar2"
         app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.545"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="?android:attr/fingerprintAuthDrawable" />
 
     <ImageButton
         android:id="@+id/imageButtonPlus"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:background="#2D4660"
+        android:backgroundTint="#00000000"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonProfile"
         app:layout_constraintHorizontal_bias="0.852"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.545"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="?attr/actionModePasteDrawable" />
 
     <ListView
         android:id="@+id/listView"
