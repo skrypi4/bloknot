@@ -65,6 +65,9 @@ class splashScreen : AppCompatActivity() {
             startActivity(Intent(this@splashScreen, BaseActivity::class.java))
         }
 
+        buttonFullZametki.setOnClickListener {
+            startActivity(Intent(this@splashScreen, BaseActivity::class.java))
+        }
 
 
 

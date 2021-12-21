@@ -2,12 +2,17 @@ package com.example.bloknot
 
 import android.app.Fragment
 import com.example.bloknot.base.MainApplication
+import com.example.bloknot.fragments.FulLZametki
 import com.example.bloknot.fragments.NewRecordFragment
 
 object Router {
 
     fun showNewRecordFragment(){
         setAnchorFragment(NewRecordFragment())
+    }
+
+    fun showFullZametkiFragment(){
+        setAnchorFragment(FulLZametki())
     }
 
     private fun setAnchorFragment(fragment: Fragment){
